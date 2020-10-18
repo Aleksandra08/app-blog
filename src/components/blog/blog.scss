@@ -1,0 +1,106 @@
+@import "../../mixinsAndVariables.scss";
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  margin-left: 45px;
+
+  &__toggle-menu {
+    display: flex;
+    position: relative;
+    width: 210px;
+    margin: 0 0 64px 0;
+  }
+}
+
+/*checkbox menu START*/
+
+.toggle-menu {
+  &__title {
+    font-family: $headerFont, sans-serif;
+    font-weight: 600;
+    color: $mainColor;
+  }
+
+  &__button {
+    position: relative;
+    top: 19px;
+    width: 40px;
+    height: 24px;
+    margin: -20px auto 0 auto;
+    border-radius: 100px;
+  }
+}
+
+.knobs, .layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.knobs {
+  z-index: 2;
+}
+
+.layer {
+  width: 100%;
+  background-color: white;
+  border: 3px solid $secondaryColor;
+  transition: 0.3s ease all;
+  z-index: 1;
+  border-radius: 100px;
+}
+
+.knobs:before {
+  content: ' ';
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  width: 8px;
+  height: 6px;
+  color: #fff;
+  padding: 5px 4px;
+  background-color: $secondaryColor;
+  border-radius: 50%;
+  transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+}
+
+.checkbox:checked + .knobs:before {
+  content: ' ';
+  left: 21px;
+  background-color: #fff;
+}
+
+.checkbox:checked ~ .layer {
+  background-color: $secondaryColor;
+}
+
+.knobs, .knobs:before, .layer {
+  transition: 0.3s ease all;
+}
+
+/*checkbox menu END*/
+
+@media screen and (max-width: 1179px) {
+  .blog {
+    align-items: center;
+    margin-left: 0;
+
+    &__toggle-menu {
+      margin: 25px 0;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import "./components/header/header.scss";
+@import "./components/sections/sections.scss";
+@import "./components/details/details.scss";
+@import "components/menu/menu.scss";
+@import "./components/blog/blog.scss";
+@import "components/card/card.scss";
+@import "./mixinsAndVariables.scss";
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $backgroundColor;
+}
+
+li, a {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}

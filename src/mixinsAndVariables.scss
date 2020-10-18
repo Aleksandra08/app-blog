@@ -1,0 +1,11 @@
+
+$headerFont: 'Open Sans';
+$titleFont: 'Montserrat';
+$mainColor: #3E4056;
+$secondaryColor: #F05D63;
+$backgroundColor: #F2F2F2;
+
+@mixin maxWidth {
+  max-width: 1440px;
+  margin: 0 auto;
+}

@@ -1,0 +1,117 @@
+@import "../../mixinsAndVariables.scss";
+
+.details {
+  display: flex;
+  flex-direction: column;
+  width: 355px;
+  color: $mainColor;
+  font-family: $headerFont, sans-serif;
+
+  &__person {
+    display: flex;
+    justify-content: start;
+  }
+
+  &__followers {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 33px;
+  }
+
+  &__descriptions {
+    line-height: 24px;
+    margin-top: 23px;
+  }
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 31px;
+
+  &__name {
+    font-family: $titleFont;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  &__edit-profile {
+    display: flex;
+    align-items: flex-end;
+    color: $secondaryColor;
+
+    span {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+
+.person {
+  position: relative;
+
+  &__setting {
+    width: 26px;
+    height: 24px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 35px;
+    right: -145px;
+    width: 176px;
+    height: 124px;
+    border-radius: 15px;
+    background: white;
+    backdrop-filter: blur(21.7463px);
+    opacity: 0.94;
+  }
+}
+
+.followers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__amount {
+    font-weight: 600;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .details {
+
+    &__followers {
+      padding: 0 10px;
+    }
+
+    &__descriptions {
+      padding: 0 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1236px) {
+  .person {
+    &__data {
+      padding: 0 0;
+    }
+
+    &__menu {
+      top: 70px;
+      right: 3px;
+    }
+  }
+
+}
