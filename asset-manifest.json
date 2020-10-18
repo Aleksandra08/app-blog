@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/app-blog.git/static/css/main.5300d920.chunk.css",
+    "main.js": "/app-blog.git/static/js/main.fe0277e2.chunk.js",
+    "main.js.map": "/app-blog.git/static/js/main.fe0277e2.chunk.js.map",
+    "runtime-main.js": "/app-blog.git/static/js/runtime-main.a5965ca4.js",
+    "runtime-main.js.map": "/app-blog.git/static/js/runtime-main.a5965ca4.js.map",
+    "static/js/2.eb96a22e.chunk.js": "/app-blog.git/static/js/2.eb96a22e.chunk.js",
+    "static/js/2.eb96a22e.chunk.js.map": "/app-blog.git/static/js/2.eb96a22e.chunk.js.map",
+    "index.html": "/app-blog.git/index.html",
+    "precache-manifest.dedb707848cd6cf3725691423118392a.js": "/app-blog.git/precache-manifest.dedb707848cd6cf3725691423118392a.js",
+    "service-worker.js": "/app-blog.git/service-worker.js",
+    "static/css/main.5300d920.chunk.css.map": "/app-blog.git/static/css/main.5300d920.chunk.css.map",
+    "static/js/2.eb96a22e.chunk.js.LICENSE.txt": "/app-blog.git/static/js/2.eb96a22e.chunk.js.LICENSE.txt",
+    "static/media/avatar.png": "/app-blog.git/static/media/avatar.eaba65c3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a5965ca4.js",
+    "static/js/2.eb96a22e.chunk.js",
+    "static/css/main.5300d920.chunk.css",
+    "static/js/main.fe0277e2.chunk.js"
+  ]
+}
